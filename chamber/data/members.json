@@ -1,0 +1,60 @@
+[
+
+    {
+      "name": "Bidemi One",
+      "logo": "images/logo1.png",
+      "address": "123 Broad St, Lagos",
+      "phone": "123-456-7890",
+      "website": "https://businessone.com",
+      "level": "Gold"
+    },
+    {
+      "name": "Nike Two",
+      "logo": "images/logo1.png",
+      "address": "24 Isaac St, Lagos",
+      "phone": "987-654-3210",
+      "website": "https://businesstwo.com",
+      "level": "Silver"
+    },
+    {
+      "name": "Ayomikun Two",
+      "logo": "images/logo3.png",
+      "address": "5 Yusuf St, Lagos",
+      "phone": "987-654-3210",
+      "website": "https://businesstwo.com",
+      "level": "Silver"
+    },
+    {
+      "name": "Rotimi Two",
+      "logo": "images/logo4.png",
+      "address": "4 Meiran St, Lagos",
+      "phone": "987-654-3210",
+      "website": "https://businesstwo.com",
+      "level": "Silver"
+    },
+    {
+      "name": "Bisi Two",
+      "logo": "images/logo5.jpg",
+      "address": "6 Agungi St, Lagos",
+      "phone": "987-654-3210",
+      "website": "https://businesstwo.com",
+      "level": "Silver"
+    },
+    {
+      "name": "Enoch Two",
+      "logo": "images/logo6.jpg",
+      "address": "56 Lanre St, Lagos",
+      "phone": "987-654-3210",
+      "website": "https://businesstwo.com",
+      "level": "Silver"
+    },
+    {
+      "name": "Femi Two",
+      "logo": "images/logo7.png",
+      "address": "456 Dele St, Lagos",
+      "phone": "987-654-3210",
+      "website": "https://businesstwo.com",
+      "level": "Silver"
+    }
+  
+]
