@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" This Is The Membership Page Of Chamber of Commerce Were New Members Can Join The Chamber By Filling A Short Form.">
+  <meta name="author" content="Enoch Bolarinwa">
+  <meta property="og:title" content="Lekki Chamber of Commerce Membership Page"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://enoch-bolarinwa.github.io/images/tech.jpg">
+  <meta property="og:url" content="https://enoch-bolarinwa.github.io/wdd231/chamber/join.html">
+  <title> Membership Page Of Lekki Chamber Of Commerce</title>
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <header>
+    <!-- Add your site header content -->
+    <h1> Membership Form</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Membership Application</h2>
+      <form action="thankyou.html" method="get">
+        <!-- First Name -->
+        <label>
+          First Name:
+          <input type="text" name="first_name" title="Enter your first name" autocomplete="given-name" required>
+        </label>
+
+        <!-- Last Name -->
+        <label>
+          Last Name:
+          <input type="text" name="last_name" title="Enter your last name" autocomplete="family-name" required>
+        </label>
+
+        <!-- Organizational Title -->
+        <label>
+          Organizational Title:
+          <input 
+            type="text" 
+            name="org_title" 
+            title="Enter your organizational title (minimum 7 characters, alpha only)" 
+            autocomplete="organization-title" 
+            pattern="[A-Za-z\s\-]{7,}" 
+            required>
+        </label>
+
+        <!-- Email Address -->
+        <label>
+          Email Address:
+          <input 
+            type="email" 
+            name="email" 
+            title="Enter a valid email address" 
+            placeholder="example@domain.com" 
+            autocomplete="email" 
+            required>
+        </label>
+
+        <!-- Mobile Phone -->
+        <label>
+          Mobile Phone:
+          <input 
+            type="tel" 
+            name="mobile" 
+            title="Enter your mobile phone number" 
+            autocomplete="tel" 
+            required>
+        </label>
+
+        <!-- Organization Name -->
+        <label>
+          Business/Organization Name:
+          <input 
+            type="text" 
+            name="organization" 
+            title="Enter your business/organization name" 
+            autocomplete="organization" 
+            required>
+        </label>
+
+        <!-- Membership Level -->
+        <label>
+          Membership Level:
+          <select name="membership_level" required>
+            <option value="NP">NP Membership (Non-Profit)</option>
+            <option value="Bronze">Bronze Membership</option>
+            <option value="Silver">Silver Membership</option>
+            <option value="Gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <!-- Organization Description -->
+        <label>
+          Business/Organization Description:
+          <textarea name="description" title="Enter a description of your business or organization"></textarea>
+        </label>
+
+        <!-- Timestamp -->
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Membership">
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <div class="card">
+        <h3>NP Membership</h3>
+        <button onclick="showModal('npModal')">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Bronze Membership</h3>
+        <button onclick="showModal('bronzeModal')">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Silver Membership</h3>
+        <button onclick="showModal('silverModal')">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Gold Membership</h3>
+        <button onclick="showModal('goldModal')">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <dialog id="npModal">
+      <h3>NP Membership Benefits</h3>
+      <p>No fee, access to special events.</p>
+      <button onclick="closeModal('npModal')">Close</button>
+    </dialog>
+    <dialog id="bronzeModal">
+      <h3>Bronze Membership Benefits</h3>
+      <p>Basic advertising, training sessions.</p>
+      <button onclick="closeModal('bronzeModal')">Close</button>
+    </dialog>
+    <dialog id="silverModal">
+      <h3>Silver Membership Benefits</h3>
+      <p>Event discounts, advanced training.</p>
+      <button onclick="closeModal('silverModal')">Close</button>
+    </dialog>
+    <dialog id="goldModal">
+      <h3>Gold Membership Benefits</h3>
+      <p>Spotlight positions, premium events, exclusive benefits.</p>
+      <button onclick="closeModal('goldModal')">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="container">
+        <p>Contact us at <a href="mailto:info@lekkichamber.org">info@lekkichamber.org</a></p>
+        <p>&copy; <span id="year"></span> Lekki Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+  </footer>
+
+  <script>
+    // Set the timestamp
+    document.getElementById('timestamp').value = new Date().toISOString();
+
+    // Functions to handle modals
+    function showModal(id) {
+      document.getElementById(id).showModal();
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).close();
+    }
+  </script>
+</body>
+</html>

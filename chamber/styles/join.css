@@ -1,0 +1,210 @@
+/* General Reset and Chamber Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .grid {
+    display: grid;
+    text-align: center;
+    align-items: center;
+  
+  }
+  
+  header, main, body, footer, .grid, h1, h2, h3 {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 840px;
+  }
+  
+  header {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #004080;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Section */
+  .form-section form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #003366;
+  }
+  
+  /* Membership Cards */
+  .membership-cards {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .membership-cards .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .membership-cards .card h3 {
+    margin: 0.5rem 0 1rem;
+    color: #004080;
+  }
+  
+  .membership-cards .card button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .membership-cards .card button:hover {
+    background-color: #003366;
+  }
+  
+  /* Responsive Grid for Cards */
+  @media (min-width: 768px) {
+    .membership-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .membership-cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Modal Styles */
+  dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 500px;
+  }
+  
+  dialog h3 {
+    color: #004080;
+    margin-top: 0;
+  }
+  
+  dialog button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  dialog button:hover {
+    background-color: #003366;
+  }
+  
+  ::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Thank You Page Styles */
+  main ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  main ul li {
+    background-color: #fff;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  main ul li strong {
+    color: #004080;
+  }
+  
